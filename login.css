@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face { font-family: Pangram; src: url('fonts/Pangram-Regular.otf'); } 
+@font-face { font-family: PangramBlack; src: url('fonts/Pangram-Black.otf');}
+@font-face { font-family: PangramExtraLight; src: url('fonts/Pangram-ExtraLight.otf');}
+
+body {
+	background-color: #E51947; /* Para browsers que não suportam gradiente */
+    background-image: linear-gradient(90deg, #E51947, #F24269, #E51947); /* Gradiente */
+}
+#tudo {
+	width: : 100%;
+    margin: auto;
+}
+
+#logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 10% 10% 5% 10%;
+}
+
+h2 {
+	color: white;
+	font-size: 4em;
+	font-family: 'Pangram', sans-serif;
+	text-align: center;
+}
+
+.preencher {
+	display: block;
+	width: 95%;
+	background-color: #EDE9E6;
+	border:none;
+	border-radius: 10px;
+	padding: 20px;
+	margin: auto;
+	font-size: 3em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.preencher:focus {
+	background-color: white;
+}
+
+.botao {
+	background-color: white;
+	color: #E51947;
+	border: none;
+	border-radius: 10px;
+	font-size: 3em;
+	font-family: 'Pangram', sans-serif;
+	text-align: center;
+	padding: 15px 40px 15px 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#campos {
+	width: 80%;
+	margin: auto;
+}
+
+.link {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#auths {
+	width: 80%;
+	margin: auto;
+	margin-top: 80px;
+	text-align: center;
+}
+
+#google {
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+    background-image: url('img/icon_google.png');
+    background-size: 65px;
+    background-position: 30px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 80px;
+}
+
+#facebook {
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	background-image: url('img/icon_facebook.png');
+    background-size: 65px;
+    background-position: 30px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 110px;
+}
+
+#entrar {
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 80px;
+}
+
+#criar {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 80px;
+}
+
+.icon {
+	width: 55px;
+	margin-right: 20px;
+}
+
+/* Label da checkbox */
+.tos {
+ 	display: block;
+ 	position: relative;
+ 	padding-left: 60px;
+ 	margin-bottom: 12px;
+ 	-webkit-user-select: none;
+ 	-moz-user-select: none;
+	-ms-user-select: none;
+ 	user-select: none;
+ 	font-size: 2em;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	text-decoration: underline;
+}
+
+/* Esconde a checkbox padrão */
+.tos input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Cria a checkbox nova */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 3px white;
+  border-radius: 3px;
+}
+
+/* Quando a checkbox está checada: */
+.tos input:checked ~ .checkmark {
+  background-color: white;
+}
+
+#cadeado {
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+#texto {
+	color: white;
+	font-size: 2em;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
