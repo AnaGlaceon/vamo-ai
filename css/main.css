@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face { font-family: Pangram; src: url('fonts/Pangram-Regular.otf'); } 
+@font-face { font-family: PangramBlack; src: url('fonts/Pangram-Black.otf');}
+@font-face { font-family: PangramExtraLight; src: url('fonts/Pangram-ExtraLight.otf');}
+
+body {
+	background-color: #E8E8E8;
+}
