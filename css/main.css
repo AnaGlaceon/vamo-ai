@@ -7,6 +7,10 @@ body {
 	background-color: #E8E8E8;
 }
 
+a {
+	text-decoration: none;
+}
+
 .footer {
 	position: fixed;
 	background-color: #F4F4F4;
@@ -96,6 +100,7 @@ body {
 #barra_pesquisa {
 	height: 100px;
 	margin-top: 40px;
+	margin-bottom: 20px;
 	padding: 20px;
 	padding-left: 80px;
 	border-style: none;
@@ -112,16 +117,19 @@ body {
 }
 
 .botao_filtro {
+	display: block;
 	background-color: #F4F4F4;
-	width: 40%;
+	width: 400px;
+	height: 400px;
 	float: left;
-	margin: 5%;
+	margin: 20px;
 }
 
 .icon_filtro {
 	display: block;
-	width: 200px;
-	padding: 20px;
+	height: 180px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 	margin: auto;
 }
 
@@ -131,3 +139,10 @@ body {
 	color: #E51947;
 	text-align: center;
 }
+
+#filtros {
+	display: block;
+	width: 92%;
+	margin: auto;
+}
+

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face { font-family: Pangram; src: url('../fonts/Pangram-Regular.otf'); } 
+@font-face { font-family: PangramBlack; src: url('../fonts/Pangram-Black.otf');}
+@font-face { font-family: PangramExtraLight; src: url('../fonts/Pangram-ExtraLight.otf');}
+
+body {
+	margin: 0px;
+	background-color: #E51947; /* Para browsers que não suportam gradiente */
+    background-image: linear-gradient(90deg, #E51947, #F24269, #E51947); /* Gradiente */
+}
+
+h1 {
+	font-family: 'PangramBlack', sans-serif;
+	font-size: 4em;
+	color: white;
+}
+
+/* Label da checkbox */
+.container {
+ 	display: block;
+ 	position: relative;
+ 	padding-left: 60px;
+ 	margin-bottom: 12px;
+ 	-webkit-user-select: none;
+ 	-moz-user-select: none;
+	-ms-user-select: none;
+ 	user-select: none;
+ 	font-size: 2em;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+/* Esconde a checkbox padrão */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Cria a checkbox nova */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 3px white;
+  border-radius: 3px;
+}
+
+/* Quando a checkbox está checada: */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/*Essa parte da checkbox eu peguei da w3schools por enquanto, depois eu troco*/
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 12px;
+  top: 4px;
+  width: 10px;
+  height: 20px;
+  border: solid #E51947;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#topnav {
+	background-color: rgba(244,244,244,0.2);
+	height: 8%;
+	width: 100%;
+}
+
+.seta_voltar {
+	width: 5%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.titulo {
+	color: white;
+	font-family: 'Pangram', sans-serif;
+	font-size: 4em;
+	text-align: center;
+	margin: 20px;
+}
+
+#filtros {
+	margin: 80px;
+}
+
+.botao {
+	background-color: white;
+	color: #E51947;
+	border: none;
+	border-radius: 10px;
+	font-size: 3em;
+	font-family: 'Pangram', sans-serif;
+	text-align: center;
+	padding: 15px 40px 15px 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+}
