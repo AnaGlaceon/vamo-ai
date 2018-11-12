@@ -5,17 +5,19 @@
 
 body {
 	background-color: #E8E8E8;
+	margin: 0;
 }
 
 a {
 	text-decoration: none;
 }
 
-h2 {
-	font-family: 'Pangram', sans-serif;
-	color: #E51947;
-	text-align: center;
-	font-size: 3.5em;
+header {
+  padding: 80px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
 }
 
 .footer {
@@ -150,22 +152,87 @@ h2 {
 #filtros {
 	display: block;
 	width: 92%;
-	height: 1500px;
 	margin: auto;
 }
 
-#container {
-	display: block;
-	width: 92%;
-	margin: auto;
-	padding-top: 30px;
+/*Codigo do slider começa aqui*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 68px;
+  margin:10px;
 }
 
-.destaques {
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 52px;
+  width: 52px;
+  left: 8px;
+  bottom: 8px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #46C13D;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #46C13D;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(52px);
+  -ms-transform: translateX(52px);
+  transform: translateX(52px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Codigo do slider termina aqui*/
+
+.conteudo {
 	display: block;
-	width: 400px;
-	height: 350px;
+	width: 80%;
 	margin: auto;
-	float: left;
-	padding: 20px;
+}
+
+.config_link {
+	font-size: 3em;
+	font-family: 'PangramBlack', sans-serif;
+	color: #E51947;
+	text-decoration: underline;
+	margin: 20px 10px 20px 10px;
 }
