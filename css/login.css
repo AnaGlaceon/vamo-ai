@@ -7,6 +7,13 @@ body {
 	background-color: #E51947; /* Para browsers que não suportam gradiente */
     background-image: linear-gradient(90deg, #E51947, #F24269, #E51947); /* Gradiente */
 }
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	color: white;
+}
+
 #tudo {
 	width: : 100%;
     margin: auto;

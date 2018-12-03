@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/main2.css">
+	<title>Museu de Arte de SP</title>
+	<script>
+		function voltar() {
+		    window.history.back();
+		}
+	</script>
+</head>
+<body>
+	<div id="header" class="sticky">
+		<a href="#" onclick="voltar()"><img src="../img/seta_esquerda.png" alt="Voltar" class="seta_voltar"></a>
+		<h2 class="titulo">Museu de Arte de SP</h2>
+	</div>
+	<div>
+		<img src="fotos/masp.png" class="imagem_principal">
+	</div>
+	<div class="conteudo_lugar comprido">
+		<h3 class="subtitulo">DESCRIÇÃO</h3>
+			<p class="texto_padrao">O Museu de Arte de São Paulo Assis Chateaubriand, popularmente famoso como MASP, é hoje um dos principais pontos artísticos da metrópole paulista. Situado na importante Avenida Paulista, artéria cultural de São Paulo, é célebre não só por seu estilo arquitetônico, mas igualmente pelo fantástico conjunto de obras, o mais considerável de toda a América Latina.</p>
+		<h3 class="subtitulo">HORÁRIOS</h3>
+			<p class="texto_padrao">Fechado as segundas-feiras.<br>Terças das 10h as 20h.<br>De quarta a domingo das 10h as 18h.</p>
+		<h3 class="subtitulo">INGRESSOS</h3>
+			<p class="texto_padrao">Entrada: R$25.<br>Meia-entrada R$12.</p>
+		<h3 class="subtitulo">ONDE FICA?</h3>
+			<p class="texto_padrao"><a href="https://goo.gl/maps/6o9LfaRcAmr">Av. Paulista, 1578 - São Paulo</a></p>
+		<div class="botoes_favs">
+			<div id="favoritos" class="botao_filtro">
+				<img src="../img/coracao_vazio.png" alt="favoritos" class="icon_filtro">
+				<p class="titulo_filtro">FAVORITAR</p>
+			</div>
+			<div id="wishlist" class="botao_filtro">
+				<img src="../img/estrela_vazia.png" alt="wishlist" class="icon_filtro">
+				<p class="titulo_filtro">QUERO IR</p>
+			</div>
+			<div id="avaliacoes" class="botao_filtro_comprido">
+				<p class="titulo_filtro">NOSSAS AVALIAÇÕES</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="../home.html"><img src="../img/icon_home.png" alt="Home" id="home"></a>
+		<a href="../busca.html"><img src="../img/icon_pesquisa.png" alt="Pesquisa" id="pesquisa"></a>
+		<a href="../perfil.html"><img src="../img/icon_perfil.png" alt="Perfil" id="perfil"></a>
+	</div>
+</body>
+</html>

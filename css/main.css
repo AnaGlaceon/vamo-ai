@@ -78,7 +78,7 @@ h2 {
 	text-decoration: underline;
 	background-image: url('../img/icon_lapis.png');
     background-size: 65px;
-    background-position: 710px;
+    background-position: 680px;
     background-repeat: no-repeat;
 }
 
@@ -159,6 +159,7 @@ h2 {
 	width: 92%;
 	margin: auto;
 	padding-top: 30px;
+	height: 1800px;
 }
 
 .destaques {
@@ -168,4 +169,45 @@ h2 {
 	margin: auto;
 	float: left;
 	padding: 20px;
+	position: relative;
+}
+
+.legenda1 {
+    position: absolute;
+    bottom: -360px;
+    left: 30px;
+    font-size: 3em;
+    font-family: 'PangramBlack', sans-serif;
+    color: white;
+}
+
+.legenda2 {
+    position: absolute;
+    bottom: -360px;
+    left: 480px;
+    font-size: 3em;
+    font-family: 'PangramBlack', sans-serif;
+    color: white;
+}
+
+.legenda3 {
+    position: absolute;
+    bottom: -750px;
+    left: 30px;
+    font-size: 3em;
+    font-family: 'PangramBlack', sans-serif;
+    color: white;
+}
+
+.legenda4 {
+    position: absolute;
+    bottom: -750px;
+    left: 480px;
+    font-size: 3em;
+    font-family: 'PangramBlack', sans-serif;
+    color: white;
+}
+
+.botao_destaque {
+    position: relative;
 }

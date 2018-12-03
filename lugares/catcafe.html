@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/main2.css">
+	<title>Vamo Aí - Cat Café</title>
+	<script>
+		function voltar() {
+		    window.history.back();
+		}
+	</script>
+</head>
+<body>
+	<div id="header" class="sticky">
+		<a href="#" onclick="voltar()"><img src="../img/seta_esquerda.png" alt="Voltar" class="seta_voltar"></a>
+		<h2 class="titulo">Cat Café</h2>
+	</div>
+	<div>
+		<img src="fotos/catcafe.png" class="imagem_principal">
+	</div>
+	<div class="conteudo_lugar comprido">
+		<h3 class="subtitulo">DESCRIÇÃO</h3>
+			<p class="texto_padrao">Uma cafeteria como qualquer outra, exceto por… Gatos! Venha tomar seu café da tarde com nossos queridos gatinhos, num local tranquilo e agradável. Você pode ficar tranquilo, os felinos ficam em uma área separada da cafeteria, mas você pode interagir com eles quando quiser. </p>
+		<h3 class="subtitulo">HORÁRIOS</h3>
+			<p class="texto_padrao">Todos os dias das 8h às 17h.</p>
+		<h3 class="subtitulo">NÃO É PERMITIDO</h3>
+			<p class="texto_padrao">A entrada de outros animais.<br>Dar comida aos gatos.<br>(Outras regras serão explicadas no estabelecimento)</p>
+		<h3 class="subtitulo">DIFERENCIAIS</h3>
+			<p class="texto_padrao">Gatos!</p>
+		<h3 class="subtitulo">ONDE FICA?</h3>
+			<p class="texto_padrao">Rua Exemplo, n420 - São Paulo</p>
+		<div class="botoes_favs">
+			<div id="favoritos" class="botao_filtro">
+				<img src="../img/coracao_vazio.png" alt="favoritos" class="icon_filtro">
+				<p class="titulo_filtro">FAVORITAR</p>
+			</div>
+			<div id="wishlist" class="botao_filtro">
+				<img src="../img/estrela_vazia.png" alt="wishlist" class="icon_filtro">
+				<p class="titulo_filtro">QUERO IR</p>
+			</div>
+			<a href="avaliacoes/av_template.html"><div id="avaliacoes" class="botao_filtro_comprido">
+				<p class="titulo_filtro">NOSSAS AVALIAÇÕES</p>
+			</div></a>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="../home.html"><img src="../img/icon_home.png" alt="Home" id="home"></a>
+		<a href="../busca.html"><img src="../img/icon_pesquisa.png" alt="Pesquisa" id="pesquisa"></a>
+		<a href="../perfil.html"><img src="../img/icon_perfil.png" alt="Perfil" id="perfil"></a>
+	</div>
+</body>
+</html>

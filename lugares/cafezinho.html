@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/main2.css">
+	<title>Vamo Aí - Cafézinho</title>
+	<script>
+		function voltar() {
+		    window.history.back();
+		}
+	</script>
+</head>
+<body>
+	<div id="header" class="sticky">
+		<a href="#" onclick="voltar()"><img src="../img/seta_esquerda.png" alt="Voltar" class="seta_voltar"></a>
+		<h2 class="titulo">Cafézinho</h2>
+	</div>
+	<div>
+		<img src="fotos/cafezinho.png" class="imagem_principal">
+	</div>
+	<div class="conteudo_lugar">
+		<h3 class="subtitulo">DESCRIÇÃO</h3>
+			<p class="texto_padrao">Um local tranquilo, ideal para tomar café da manhã com a família. Ambiente aconchegante, onde pode-se trabalhar, ou fazer pequenas reuniões. Prove nossas variadas opções de salgados e doces, e nosso famoso Capuccino!</p>
+		<h3 class="subtitulo">HORÁRIOS</h3>
+			<p class="texto_padrao">De segunda a sexta das 07h às 22h.<br>Fins de semana e feriados das 10h às 20h.</p>
+		<h3 class="subtitulo">NÃO É PERMITIDO</h3>
+			<p class="texto_padrao">A entrada de animais.<br>Permanência no local sem a compra de produtos.</p>
+		<h3 class="subtitulo">ONDE FICA?</h3>
+			<p class="texto_padrao">Avenida de Exemplo, n669 - São Paulo</p>
+		<div class="botoes_favs">
+			<div id="favoritos" class="botao_filtro">
+				<img src="../img/coracao_vazio.png" alt="favoritos" class="icon_filtro">
+				<p class="titulo_filtro">FAVORITAR</p>
+			</div>
+			<div id="wishlist" class="botao_filtro">
+				<img src="../img/estrela_vazia.png" alt="wishlist" class="icon_filtro">
+				<p class="titulo_filtro">QUERO IR</p>
+			</div>
+			<div id="avaliacoes" class="botao_filtro_comprido">
+				<p class="titulo_filtro">NOSSAS AVALIAÇÕES</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<a href="../home.html"><img src="../img/icon_home.png" alt="Home" id="home"></a>
+		<a href="../busca.html"><img src="../img/icon_pesquisa.png" alt="Pesquisa" id="pesquisa"></a>
+		<a href="../perfil.html"><img src="../img/icon_perfil.png" alt="Perfil" id="perfil"></a>
+	</div>
+</body>
+</html>
