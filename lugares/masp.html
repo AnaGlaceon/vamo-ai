@@ -7,6 +7,24 @@
 	<script>
 		function voltar() {
 		    window.history.back();
+		};
+		var toggleFav = false;
+		function favoritar() {
+		    if (toggleFav === true) {
+		        document.getElementById('bt_fav').src  = '../img/coracao_vazio.png';
+		    } else {
+		       document.getElementById('bt_fav').src = '../img/coracao_preenchido.png'; 
+		    }
+		    toggleFav = !toggleFav; 
+		}
+		var toggleWish = false;
+		function wishlist() {
+		    if (toggleWish === true) {
+		        document.getElementById('bt_wish').src  = '../img/estrela_vazia.png';
+		    } else {
+		       document.getElementById('bt_wish').src = '../img/estrela_preenchida.png'; 
+		    }
+		    toggleWish = !toggleWish; 
 		}
 	</script>
 </head>
@@ -28,17 +46,17 @@
 		<h3 class="subtitulo">ONDE FICA?</h3>
 			<p class="texto_padrao"><a href="https://goo.gl/maps/6o9LfaRcAmr">Av. Paulista, 1578 - São Paulo</a></p>
 		<div class="botoes_favs">
-			<div id="favoritos" class="botao_filtro">
-				<img src="../img/coracao_vazio.png" alt="favoritos" class="icon_filtro">
+			<a onclick="favoritar()"><div id="favoritos" class="botao_filtro">
+				<img src="../img/coracao_vazio.png" alt="favoritos" class="icon_filtro" id="bt_fav">
 				<p class="titulo_filtro">FAVORITAR</p>
-			</div>
-			<div id="wishlist" class="botao_filtro">
-				<img src="../img/estrela_vazia.png" alt="wishlist" class="icon_filtro">
+			</div></a>
+			<a onclick="wishlist()"><div id="wishlist" class="botao_filtro">
+				<img src="../img/estrela_vazia.png" alt="wishlist" class="icon_filtro" id="bt_wish">
 				<p class="titulo_filtro">QUERO IR</p>
-			</div>
-			<div id="avaliacoes" class="botao_filtro_comprido">
+			</div></a>
+			<a href="avaliacoes/av_template.html"><div id="avaliacoes" class="botao_filtro_comprido">
 				<p class="titulo_filtro">NOSSAS AVALIAÇÕES</p>
-			</div>
+			</div></a>
 		</div>
 	</div>
 	<div class="footer">
